@@ -65,6 +65,9 @@ const Riwayat = () => {
             <thead className="bg-gray-100">
               <tr>
                 <th className="px-6 py-3 border-b border-gray-200 text-left text-sm font-medium text-gray-600">
+                  User
+                </th>
+                <th className="px-6 py-3 border-b border-gray-200 text-left text-sm font-medium text-gray-600">
                   Age
                 </th>
                 <th className="px-6 py-3 border-b border-gray-200 text-left text-sm font-medium text-gray-600">
@@ -102,6 +105,10 @@ const Riwayat = () => {
                   key={index}
                   className={`${index % 2 === 0 ? "bg-gray-50" : "bg-white"}`}
                 >
+                  <td className="px-6 py-4 border-b border-gray-200 text-sm text-gray-700">
+                    {row.user_name}<br />
+                    <span className="text-gray-500 text-xs">{row.user_email}</span>
+                  </td>
                   <td className="px-6 py-4 border-b border-gray-200 text-sm text-gray-700">
                     {row.age}
                   </td>
